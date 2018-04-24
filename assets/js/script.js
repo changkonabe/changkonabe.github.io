@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
-    const TOPICS = ["Intro to Java.",  "Generics.", "Linked Lists.",
+    const TOPICS = ["Intro to Java.", "Git.", "Generics.",
+                    "Linked Lists.", "Asymptotic Analysis.", "Hashing",
                     "Trees.", "Graphs.", "Sorting."];
     const SITENAME = "https://changkonabe.github.io/"
     
@@ -11,7 +12,7 @@ $(document).ready(function() {
     // jQuery Function Number
     $(".box").click(function() {
         let topic = $(this)[0].innerText.trim();
-        let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html");
+        let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
         let redirect = SITENAME + "topics/" + cleaned;
         window.location.href = redirect;
     });

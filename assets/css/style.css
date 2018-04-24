@@ -7,6 +7,10 @@ body {
     top: 50px;
 }
 
+.button:visited {
+    color: inherit;
+}
+
 #navbar {
     display: flex;
     position: fixed;
@@ -14,37 +18,55 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 10%;
+    height: 60px;
     background-color: black;
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 #pull-left {
     width: 50%;
     display: flex;
+    justify-content: flex-start;
 }
 
 #pull-right {
     width: 50%;
     display: flex;
+    justify-content: flex-end;
 }
 
 #navbar-item {
     display: flex;
-    margin: 15px;
+    margin: 20px;
+}
+
+#navbar-item:hover {
+    color: #D0D0D0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    color: #596475;
+    border-style: solid;
+    border-color: #596475;
 }
 
 #topics-container {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 10%;
 }
 
 .box {
-    position:relative;
-    margin: 10px;
+    margin: 5%;
     display: flex;
     align-items: center;
     width: 200px;
