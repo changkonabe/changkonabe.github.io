@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     const TOPICS = ["Intro to Java.", "Git.", "Classes.", "Inheritance.",
                     "Interfaces.", "Iterators and Iterables.", "Equality.",
-                    "Generics.", "Collections, Abstract Data Types.",
+                    "Generics.", "Collections, Abstract Data Types.", "Streams.",
                     "Linked Lists.", "Asymptotic Analysis.", "Hashing.",
                     "Binary Trees.", "Balanced Trees.", "Graphs.", "Graph Algorithms.", "Sorting."];
     
