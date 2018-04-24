@@ -1,10 +1,18 @@
+/* Global style */
 body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 #content {
     position: relative;
-    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+}
+.button {
+    color: white;
 }
 
 .button:visited {
@@ -52,6 +60,31 @@ a {
 #navbar-item:hover {
     color: #D0D0D0;
 }
+/* About page. */
+
+#me-wrapper {
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: auto;
+}
+
+#me {
+    height: 150px;
+    width: 150px;
+}
+
+#about-me {
+    width: 60%;
+}
+
+p {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Topics page. */
 
 #header {
     display: flex;
