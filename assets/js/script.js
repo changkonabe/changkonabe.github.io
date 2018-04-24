@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    const WPM = 275;
     
     const TOPICS = ["Intro to Java.", "Git.", "Classes.", "Inheritance.",
                     "Interfaces.", "Iterators and Iterables.", "Equality.",
@@ -7,6 +9,11 @@ $(document).ready(function() {
                     "Binary Trees.", "Balanced Trees.", "Graphs.", "Graph Algorithms.", "Sorting."];
     
     const SITENAME = "https://changkonabe.github.io/";
+
+    let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
+    
+    // jQuery Function Number
+    $("#about-read-time").text(aboutWordCount / WPM + " min read");
     
     for (let i = 0; i < TOPICS.length; i++) {
         addTopic(TOPICS[i]);
