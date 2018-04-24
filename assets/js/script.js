@@ -10,15 +10,16 @@ $(document).ready(function() {
     
     const SITENAME = "https://changkonabe.github.io/";
 
-    let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
+    if ($("#about-me")[0]) {
+        let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
     
-    // jQuery Function Number
-    $("#about-read-time").text((aboutWordCount / WPM).toFixed(2) + " min read");
+        // jQuery Function Number
+        $("#about-read-time").text((aboutWordCount / WPM).toFixed(2) + " min read");
+    }
     
     for (let i = 0; i < TOPICS.length; i++) {
         addTopic(TOPICS[i]);
     }
-
 
     // jQuery Function Number
     $(".box").hover(
