@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     const TOPICS = ["Intro to Java.", "Git.", "Generics.",
-                    "Linked Lists.", "Asymptotic Analysis.", "Hashing",
+                    "Linked Lists.", "Asymptotic Analysis.", "Hashing.",
                     "Trees.", "Graphs.", "Sorting."];
     
     const SITENAME = "https://changkonabe.github.io/";

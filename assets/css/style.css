@@ -80,7 +80,7 @@ a {
     margin: 20px;
 }
 
-#navbar-item:hover {
+.nav-button:hover {
     color: #D0D0D0;
 }
 
