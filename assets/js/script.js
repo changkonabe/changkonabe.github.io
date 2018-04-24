@@ -1,8 +1,10 @@
 $(document).ready(function() {
     
-    const TOPICS = ["Intro to Java.", "Git.", "Generics.",
+    const TOPICS = ["Intro to Java.", "Git.", "Classes.", "Inheritance.",
+                    "Interfaces.", "Iterators and Iterables.", "Equality.",
+                    "Generics.", "Collections, Abstract Data Types.",
                     "Linked Lists.", "Asymptotic Analysis.", "Hashing.",
-                    "Trees.", "Graphs.", "Sorting."];
+                    "Binary Trees.", "Balanced Trees.", "Graphs.", "Graph Algorithms.", "Sorting."];
     
     const SITENAME = "https://changkonabe.github.io/";
     
