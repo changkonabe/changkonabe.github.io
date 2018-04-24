@@ -13,7 +13,7 @@ $(document).ready(function() {
     let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
     
     // jQuery Function Number
-    $("#about-read-time").text(aboutWordCount / WPM + " min read");
+    $("#about-read-time").text((aboutWordCount / WPM).toFixed(2) + " min read");
     
     for (let i = 0; i < TOPICS.length; i++) {
         addTopic(TOPICS[i]);

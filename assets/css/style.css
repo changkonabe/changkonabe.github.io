@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    box-shadow: 2.5px 5px #D0D0D0;
+    box-shadow: 2.5px 5px #ABABAB;
 }
 
 .button:hover {
@@ -81,7 +81,7 @@ a {
 }
 
 .nav-button:hover {
-    color: #D0D0D0;
+    color: #ABABAB;
 }
 
 /* About page. */
