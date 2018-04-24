@@ -11,11 +11,33 @@ body {
     align-items: center;
     top: 60px;
 }
+
 .button {
+    margin: 15px;
+    height: 75px;
+    width: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 2.5px 5px #D0D0D0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translate(2.5px, 5px);
+}
+
+.nav-button {
     color: white;
 }
 
-.button:visited {
+.nav-button:visited {
     color: inherit;
 }
 
@@ -37,6 +59,7 @@ body {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -60,19 +83,20 @@ a {
 #navbar-item:hover {
     color: #D0D0D0;
 }
+
 /* About page. */
 
 #me-wrapper {
     margin: 15px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     overflow: auto;
 }
 
 #me {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 
 #about-me {
@@ -82,6 +106,8 @@ a {
 p {
     display: flex;
     justify-content: flex-start;
+    font-size: 25px;
+    line-height: 40px;
 }
 
 /* Topics page. */
@@ -111,11 +137,6 @@ p {
     height: 200px;
     border-color: black;
     border-style: solid;
-}
-
-.box:hover {
-    cursor: pointer;
-    color: red;
 }
 
 #topic-content {

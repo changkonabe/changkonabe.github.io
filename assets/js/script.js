@@ -10,11 +10,14 @@ $(document).ready(function() {
         addTopic(TOPICS[i]);
     }
 
-    $("#navbar-item").hover(
-        function() {
-            
-        }, function() {
 
+    // jQuery Function Number
+    $(".box").hover(
+        function() {
+            $(this).css('cursor', 'pointer');
+            $(this).css('color', 'red');
+        }, function() {
+            $(this).css('color', 'inherit'); 
         });
                             
     // jQuery Function Number
