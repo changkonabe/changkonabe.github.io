@@ -21,6 +21,11 @@ body {
     height: 60px;
     background-color: black;
     color: white;
+    opacity: 0.9;
+}
+
+#navbar-item {
+    opacity: 1;
 }
 
 a {

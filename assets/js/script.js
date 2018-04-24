@@ -3,12 +3,20 @@ $(document).ready(function() {
     const TOPICS = ["Intro to Java.", "Git.", "Generics.",
                     "Linked Lists.", "Asymptotic Analysis.", "Hashing",
                     "Trees.", "Graphs.", "Sorting."];
-    const SITENAME = "https://changkonabe.github.io/"
+    
+    const SITENAME = "https://changkonabe.github.io/";
     
     for (let i = 0; i < TOPICS.length; i++) {
         addTopic(TOPICS[i]);
     }
 
+    $("#navbar-item").hover(
+        function() {
+            
+        }, function() {
+
+        });
+                            
     // jQuery Function Number
     $(".box").click(function() {
         let topic = $(this)[0].innerText.trim();
