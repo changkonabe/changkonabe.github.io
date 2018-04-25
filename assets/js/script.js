@@ -43,7 +43,7 @@ $(document).ready(function() {
     $(".box").click(function() {
         let topic = $(this)[0].innerText.trim();
         if (RELEASED.has(topic)) {
-            let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
+            let cleaned = topic.replace(/[^a-zA-Z], ""/).replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
             let redirect = SITENAME + "topics/" + cleaned;
             window.location.href = redirect;
         } else {
@@ -51,6 +51,7 @@ $(document).ready(function() {
             $(this).addClass("null-box");
             $(this).html("<div id='topic-content'><h1>Coming soon.</h1></div>");
             $(this).css("color", "white");
+            $(this).css("cursor", "default");
         }
     });
 
