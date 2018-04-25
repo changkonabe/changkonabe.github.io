@@ -22,14 +22,14 @@
       </div>
     </div>
 
-    <ul id="sidebar">
-      <li id="jump-lesson" class="sidebar-item">
-        Lesson
-      </li>
-      <li id="jump-practice-problems" class="sidebar-item">
-        Practice
-      </li>
-    </ul>
+    <!-- <ul id="sidebar"> -->
+    <!--   <li id="jump-lesson" class="sidebar-item"> -->
+    <!--     Lesson -->
+    <!--   </li> -->
+    <!--   <li id="jump-practice-problems" class="sidebar-item"> -->
+    <!--     Practice -->
+    <!--   </li> -->
+    <!-- </ul> -->
     
     <div id="content">
       
@@ -37,28 +37,59 @@
         <h1>An Intro to Java.</h1>
         <div id="read-time"></div>
         <p>
-          Java is a language that in which its programs are compiled.
+          Java is a language in which its programs are compiled.
           This differs from Python, which is implemented
           mainly through interpretation.
-          As you may have seen with Python in CS61A, interpretted means the
+          As you may have seen with Python in CS61A, interpreted means the
           program is executed line by line as it is run. What it means to be compiled
           is that a software known as a compiler takes code and translates it to
           another language, usually one at a lower level and closer to machine language.
-          It is this compiled code that is then run in order to run the program.
+          It is this compiled code that is then executed in order to run the program.
         </p>
-        <h2>Java Syntax</h2>
+        <h2>Primitives and Typing</h2>
         <p>
-          The syntax for logical operators consist of:
+          In Java, there are 8 primitive types, which are basic data types implemented
+          and supported by the language. They are as follows:
         </p>
-        <code>&&, ||, !</code>
+        <ul style="font-size: 25px; line-height: 40px;">
+          <li>boolean: true or false.</li>
+          <li>char: 16-bit Unicode character such as 'a'.</li>
+          <li>byte: 8-bit two's complement integer.</li>
+          <li>short: 16-bit two's complement integer.</li>
+          <li>int: 32-bit two's complement integer.</li>
+          <li>long: 64-bit two's complement integer.</li>
+          <li>float: single precision 32-bit floating point.</li>
+          <li>double: double precision 64-bit floating point.</li>
+        </ul>
         <p>
-          Which represent logical AND, OR, and NOT respectively.
+          Java as a language is statically typed. This means all declaration
+          of variables specifies the type of the variable in that scope.
+          So, if we want to declare a variable to store primitive ints, we could
+          have a declaration like:
         </p>
-        <h1 id="practice-problems">Practice</h1>
+        <code>int x;</code><br>
+        <code>x = 5;</code>
         <p>
-          Write a snippet of java code that 
+          Note that then the line
         </p>
+        <code>x = true;</code>
+        <p>
+          would cause the
+          program to fail at compilation because we see the variable x
+          in this scope is already of static type "int", so it is not
+          possible to redeclare its value to be something of type boolean.
+        </p>
+        <h2>Logical Operators</h2>
+        <p>
+          To represent logical AND, OR, and NOT respectively, we have
+        </p>
+        <code>
+          &&, ||, !
+        </code>
       </div>
+      <a href="https://changkonabe.github.io/topics.html" class="button">
+        Back to topics.
+      </a>
       <div id="footer"></div>    
     </div>
   </body>

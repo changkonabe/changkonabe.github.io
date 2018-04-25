@@ -156,6 +156,12 @@ p {
     border-style: solid;
 }
 
+.null-box {
+    background-color:black;
+    width: 200px;
+    height: 200px;
+}
+
 #topic-content {
     display: flex;
     align-items: center;
@@ -189,6 +195,10 @@ p {
 
 .sidebar-item:hover {
     cursor: pointer;
+}
+
+#read-time {
+    color: #ABABAB;
 }
 
 #lesson {

@@ -12,17 +12,10 @@ $(document).ready(function() {
     
     const SITENAME = "https://changkonabe.github.io/";
 
-    if ($("#about-me")[0]) {
-        let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
-    
-        // jQuery Function Number
-        $("#about-read-time").text(Math.ceil((aboutWordCount / WPM)) + " min read");
-    }
-
     if ($("#lesson")[0]) {
         let aboutWordCount = $("#lesson")[0].innerText.split(" ").length;
     
-        // jQuery Function Number
+        // jQuery Function Number 1
         $("#read-time").text(Math.ceil((aboutWordCount / WPM)) + " min read");
     }
     
@@ -30,23 +23,34 @@ $(document).ready(function() {
         addTopic(TOPICS[i]);
     }
 
-    // jQuery Function Number
+    // jQuery Function Number 2
     $(".box").hover(
         function() {
-            // jQuery Function Number
-            $(this).css('cursor', 'pointer');
-            $(this).css('color', 'red');
+            let clicked = $(this)[0].classList.contains("null-box");
+            if (!clicked) {
+            // jQuery Function Number 3
+                $(this).css('cursor', 'pointer');
+                $(this).css('color', 'red');
+            }
         }, function() {
-            $(this).css('color', 'inherit'); 
+            let clicked = $(this)[0].classList.contains("null-box");
+            if (!clicked) {
+                $(this).css('color', 'inherit');
+            }
         });
                             
-    // jQuery Function Number
+    // jQuery Function Number 4
     $(".box").click(function() {
         let topic = $(this)[0].innerText.trim();
         if (RELEASED.has(topic)) {
             let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
             let redirect = SITENAME + "topics/" + cleaned;
             window.location.href = redirect;
+        } else {
+            // jQuery Function Number 5
+            $(this).addClass("null-box");
+            $(this).html("<div id='topic-content'><h1>Coming soon.</h1></div>");
+            $(this).css("color", "white");
         }
     });
 
@@ -59,7 +63,7 @@ $(document).ready(function() {
     // });
     
     function addTopic(name) {
-        // jQuery Function Number
+        // jQuery Function Number 6
         $("#topics-container").append(
             '<div id="topic" class="box"><div id="topic-content"><h1>' + name + '</h1></div></div>'
         );
