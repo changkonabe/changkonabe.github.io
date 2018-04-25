@@ -1,11 +1,67 @@
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-</head>
-<body>
-  Today we're going to learn about Java. 
-</body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id="navbar">
+      <div id="pull-left">
+        <div id="navbar-item">
+          Kevin Chang
+        </div>
+      </div>
+      <div id="pull-right">
+        <div id="navbar-item">
+          <a class="nav-button" href="https://changkonabe.github.io/">About</a>
+        </div>
+        <div id="navbar-item">
+          <a class="nav-button" href="https://changkonabe.github.io/topics.html">Topics</a>
+        </div>
+      </div>
+    </div>
+
+    <ul id="sidebar">
+      <li id="jump-lesson" class="sidebar-item">
+        Lesson
+      </li>
+      <li id="jump-practice-problems" class="sidebar-item">
+        Practice
+      </li>
+    </ul>
+    
+    <div id="content">
+      
+      <div id="lesson">
+        <h1>An Intro to Java.</h1>
+        <div id="read-time"></div>
+        <p>
+          Java is a language that in which its programs are compiled.
+          This differs from Python, which is implemented
+          mainly through interpretation.
+          As you may have seen with Python in CS61A, interpretted means the
+          program is executed line by line as it is run. What it means to be compiled
+          is that a software known as a compiler takes code and translates it to
+          another language, usually one at a lower level and closer to machine language.
+          It is this compiled code that is then run in order to run the program.
+        </p>
+        <h2>Java Syntax</h2>
+        <p>
+          The syntax for logical operators consist of:
+        </p>
+        <code>&&, ||, !</code>
+        <p>
+          Which represent logical AND, OR, and NOT respectively.
+        </p>
+        <h1 id="practice-problems">Practice</h1>
+        <p>
+          Write a snippet of java code that 
+        </p>
+      </div>
+      <div id="footer"></div>    
+    </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
 </html>

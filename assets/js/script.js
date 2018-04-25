@@ -7,6 +7,8 @@ $(document).ready(function() {
                     "Generics.", "Collections, Abstract Data Types.", "Streams.",
                     "Linked Lists.", "Asymptotic Analysis.", "Hashing.",
                     "Binary Trees.", "Balanced Trees.", "Graphs.", "Graph Algorithms.", "Sorting."];
+
+    const RELEASED = new Set(["Intro to Java."]);
     
     const SITENAME = "https://changkonabe.github.io/";
 
@@ -14,7 +16,14 @@ $(document).ready(function() {
         let aboutWordCount = $("#about-me")[0].innerText.split(" ").length;
     
         // jQuery Function Number
-        $("#about-read-time").text((aboutWordCount / WPM).toFixed(2) + " min read");
+        $("#about-read-time").text(Math.ceil((aboutWordCount / WPM)) + " min read");
+    }
+
+    if ($("#lesson")[0]) {
+        let aboutWordCount = $("#lesson")[0].innerText.split(" ").length;
+    
+        // jQuery Function Number
+        $("#read-time").text(Math.ceil((aboutWordCount / WPM)) + " min read");
     }
     
     for (let i = 0; i < TOPICS.length; i++) {
@@ -24,6 +33,7 @@ $(document).ready(function() {
     // jQuery Function Number
     $(".box").hover(
         function() {
+            // jQuery Function Number
             $(this).css('cursor', 'pointer');
             $(this).css('color', 'red');
         }, function() {
@@ -33,10 +43,20 @@ $(document).ready(function() {
     // jQuery Function Number
     $(".box").click(function() {
         let topic = $(this)[0].innerText.trim();
-        let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
-        let redirect = SITENAME + "topics/" + cleaned;
-        window.location.href = redirect;
+        if (RELEASED.has(topic)) {
+            let cleaned = topic.replace(/\s/g, "-").replace(/\./,".html").toLowerCase();
+            let redirect = SITENAME + "topics/" + cleaned;
+            window.location.href = redirect;
+        }
     });
+
+    // $(".sidebar-item").click(function() {
+    //     let jumpId = "#" + $(this).attr("id").slice("jump-".length);
+    //     let pos = $(jumpId).position();
+    //     window.location = pos;
+        
+    //     console.log(pos);
+    // });
     
     function addTopic(name) {
         // jQuery Function Number

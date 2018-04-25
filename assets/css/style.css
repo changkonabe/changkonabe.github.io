@@ -12,6 +12,22 @@ body {
     top: 60px;
 }
 
+#footer {
+    height: 60px;
+}
+
+p {
+    hyphens: manual;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+h2 {
+    color: #ABABAB;
+}
+
 .button {
     margin: 15px;
     height: 75px;
@@ -148,4 +164,41 @@ p {
     margin: 10%;
     /* height: 80%; */
     /* width: 80%; */
+}
+
+/* Topic page style */
+
+#sidebar {
+    display: flex:
+    flex-direction: column;
+    position: fixed;
+    color: black;
+    z-index: 100;
+    top: 120px;
+    width: 120px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.sidebar-item {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.sidebar-item:hover {
+    cursor: pointer;
+}
+
+#lesson {
+    width: 60%;
+}
+
+pre {
+    font-size: 25px;
+}
+
+code {
+    font-size: 25px;
 }
